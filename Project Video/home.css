@@ -1,0 +1,247 @@
+:root {
+    --primary: #b6895b;
+    --bg: #010101;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+    body {
+        font-family:'poppins', sans-serif;
+        background-color: var(--bg);
+        color: white;
+
+    }
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1,1,1,0.8);
+    border-button: 1px solid #513c28;
+
+/*    position: fixed; */
+      margin-top: 0; 
+/*    left: 0; */
+/*    right: 0; */
+/*    z-index:9000'; */
+}
+
+
+.header {
+color: #fff;
+font-size:20;
+font-align:center;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.4rem 7%;
+background-color: rgba(1,1,1,0.8);
+border-button: 1px solid #513c28;
+flex-direction: column;
+font-size:12px;
+background-image: url(./img/grafis1.webp);
+width: 100%;
+height: auto;
+background-button: 1.4rem;
+z-index:9000;
+}
+
+.header .h1 {
+font-size: 50px;
+text-align: center;
+}
+
+.header .tombol {
+color: green;
+background-color: white;
+border-radius: 4px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1,1,1,0.8);
+    border-button: 1px solid #513c28;
+ }
+
+.menu {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    background-color: rgba(1,1,1,0.8);
+    border-button: 1px solid #513c28;
+    width: 1750px;
+    z-index:9000';
+
+}
+
+.section .menu .h2 {
+    text-align: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1,1,1,0.8);
+    border-button: 1px;
+}
+
+
+.menu .row {
+display: flex;
+
+flex-wrap: wrap;
+margin-top: 1rem
+justify-content: center;
+padding-left: 1rem;
+}
+
+.menu .row .menu-film {
+text-align: left;
+padding-bottom: 0;
+}
+
+.menu .row .menu-film img {
+border-radius: 5%;
+width: 50%px;
+height: 50%;
+margin-top: 1rem;
+}
+
+.menu .row .menu-film .menu-film-title {
+margin-top:1.4rem auto 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1,1,1,0.8);
+    border-button: 1px solid #513c28;
+    flex-direction: row;
+    width: auto;
+    background-color: grey;
+    border-radius:2%
+
+}
+
+.title-footer {
+    padding: 14px;
+    padding: 1rem 7%;
+    font-size: 12px;
+
+}
+
+.alamat-footer {
+    padding: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+.navbar-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.4rem 7%;
+    width: 100%;
+    background-color: rgba(1,1,1,0.8);
+    border-button: 1px solid #513c28;
+    font-size: 10px;
+}
+
+
+
+
+/* Tablet  */
+
+@media (max-width: 1024px) {
+   .logo {
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+    }
+   .navbar-nav {
+        flex-direction: column;
+    }
+    .section .menu {
+        flex-direction: column;
+    }
+   .section .menu .row {
+        flex-direction: column;
+    }
+   .menu .row {
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+
+/* Tablet Portrait */
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .logo {
+         flex-direction: column;
+     }
+     .header {
+         flex-direction: column;
+     }
+    .navbar-nav {
+         flex-direction: column;
+     }
+     .section .menu {
+         flex-direction: column;
+     }
+    .section .menu .row {
+         flex-direction: column;
+     }
+    .menu .row {
+         flex-direction: column;
+     }
+    .footer {
+        flex-direction: column;
+ }
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+    }
+   .navbar-nav {
+        flex-direction: column;
+    }
+    .section .menu {
+        flex-direction: column;
+    }
+   .section .menu .row {
+        flex-direction: column;
+    }
+   .menu .row {
+        flex-direction: column;
+    }
+   .footer {
+       flex-direction: column;
+}  
+}
+
+
+
+
+
