@@ -77,18 +77,18 @@ border-radius: 4px;
  }
 
 .menu {
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1.4rem 7%;
     background-color: rgba(1,1,1,0.8);
     border-button: 1px solid #513c28;
-    width: 1750px;
-    z-index:9000';
 
 }
 
 .section .menu .h2 {
-    text-align: center;
+    
+    text-align: left;
     padding: 1.4rem 7%;
     background-color: rgba(1,1,1,0.8);
     border-button: 1px;
@@ -97,24 +97,31 @@ border-radius: 4px;
 
 .menu .row {
 display: flex;
-
+flex-direction: row;
 flex-wrap: wrap;
-margin-top: 1rem
-justify-content: center;
+justify-content: space-between;
+align-items: center;
+margin-top: 1rem;
 padding-left: 1rem;
+max-width: 100%;
+height: auto;
 }
+
 
 .menu .row .menu-film {
 text-align: left;
 padding-bottom: 0;
 }
 
+
 .menu .row .menu-film img {
 border-radius: 5%;
-width: 50%px;
-height: 50%;
+width: 20%px;
+height: 10%;
 margin-top: 1rem;
+border-image: blue;
 }
+
 
 .menu .row .menu-film .menu-film-title {
 margin-top:1.4rem auto 2rem;
@@ -166,22 +173,22 @@ margin-top:1.4rem auto 2rem;
 /* Tablet  */
 
 @media (max-width: 1024px) {
-   .logo {
+    .logo {
         flex-direction: column;
     }
     .header {
         flex-direction: column;
     }
-   .navbar-nav {
+    .navbar-nav {
         flex-direction: column;
     }
     .section .menu {
         flex-direction: column;
     }
-   .section .menu .row {
+    .section .menu .row {
         flex-direction: column;
     }
-   .menu .row {
+    .section .menu .row .image {
         flex-direction: column;
     }
     .footer {
@@ -196,21 +203,21 @@ margin-top:1.4rem auto 2rem;
     .logo {
          flex-direction: column;
      }
-     .header {
+    .header {
          flex-direction: column;
      }
     .navbar-nav {
          flex-direction: column;
      }
-     .section .menu {
+    .section .menu {
          flex-direction: column;
      }
     .section .menu .row {
          flex-direction: column;
      }
-    .menu .row {
-         flex-direction: column;
-     }
+    .section .menu .row .image {
+        flex-direction: column;
+    }
     .footer {
         flex-direction: column;
  }
@@ -224,19 +231,19 @@ margin-top:1.4rem auto 2rem;
     .header {
         flex-direction: column;
     }
-   .navbar-nav {
+    .navbar-nav {
         flex-direction: column;
     }
     .section .menu {
         flex-direction: column;
     }
-   .section .menu .row {
+    .section .menu .row {
         flex-direction: column;
     }
-   .menu .row {
+    .section .menu .row .image {
         flex-direction: column;
     }
-   .footer {
+    .footer {
        flex-direction: column;
 }  
 }
